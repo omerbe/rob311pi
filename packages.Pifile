@@ -28,3 +28,8 @@ RUN bash -c "python3 -m pip install /home/${user}/rtplot/"
 
 # Example code
 RUN bash -c "git clone https://github.com/erouse/RPi_example_code /home/${user}/RPi_example_code"
+
+# ROB311 Python packages
+RUN bash -c "python3 -m pip install pyPS4Controller"
+RUN bash -c "python3 -m pip install simple-pid"
+RUN bash -c "python3 -m pip install adafruit-circuitpython-dotstar"
