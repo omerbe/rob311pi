@@ -36,5 +36,5 @@ RUN bash -c "python3 -m pip install adafruit-circuitpython-dotstar"
 
 # ROB311 C Tools
 RUN apt install -y cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
-RUN bash -c "git clone https://github.com/neurobionics/rob311-firmware.git /home/${user}/rob311"
+RUN bash -c "git clone https://github.com/neurobionics/rob311.git /home/${user}/rob311"
 RUN bash -c "chown -R $USER /home/${user}/rob311"
