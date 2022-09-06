@@ -33,3 +33,6 @@ RUN bash -c "git clone https://github.com/erouse/RPi_example_code /home/${user}/
 RUN bash -c "python3 -m pip install pyPS4Controller"
 RUN bash -c "python3 -m pip install simple-pid"
 RUN bash -c "python3 -m pip install adafruit-circuitpython-dotstar"
+
+# ROB311 C Tools
+RUN apt install -y cmake gcc-arm-none-eabi libnewlib-arm-none-eabi build-essential
