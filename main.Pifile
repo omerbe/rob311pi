@@ -6,15 +6,15 @@ RUN touch /boot/ssh
 
 source .env
 
-hostname="${HOSTNAME:-neurobionics}"
+hostname="${HOSTNAME:-rob311}"
 user="${USER:-pi}"
-password="${USERPASSWORD:-neurobionics}"
+password="${USERPASSWORD:-rob311}"
 email="${EMAIL:-ejrouse@umich.edu}"
 mwpsk="${PASSWORD:-password}"
 wifissid="${WIFI_SSID:-network}"
 wifipsk="${WIFI_PASSPHRASE:-password}"
-apssid="${AP_SSID:-NeurobionicsRPi}"
-appsk="${AP_PASSPHRASE:-neurobionics}"
+apssid="${AP_SSID:-ROB311RPi}"
+appsk="${AP_PASSPHRASE:-rob311}"
 countrycode="${WIFI_CC:-US}"
 
 ##################################
