@@ -5,7 +5,7 @@ on:
     inputs:
       host_name:
         description: "Hostname"
-        default: neurobionics
+        default: rob311
         required: true
       user:
         description: "Username"
@@ -14,7 +14,7 @@ on:
       password:
         description: "Password"
         required: true
-        default: neurobionics
+        default: rob311
       mwireless_pass:
         description: "Get the MWireless Passphrase from: https://bit.ly/30zEzPCRPi"
         required: false
@@ -35,11 +35,11 @@ on:
       wpa_ssid:
         description: "Access Point SSID"
         required: true
-        default: NeurobionicsRPi
+        default: ROB311RPi
       wpa_passphrase:
         description: "Access Point Passphrase"
         required: true
-        default: neurobionics
+        default: rob311
 env:
   PIFILE: main
 
