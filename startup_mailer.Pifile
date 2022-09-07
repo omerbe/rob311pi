@@ -59,6 +59,7 @@ def compose_email(gmail_user, recipients, ipaddr, mac, token, today, hostname):
               <h1 style="font-size:20px;">Wifi IP Address Emailer Utility v2.0 <br>&copy; University of Michigan Neurobionics Lab</h1>
               <p style="font-size:15px;">
               <b>Hostname:</b> {5} <br>
+              <b>Team Name:</b> --- <br>
               <b>IP Address:</b> {0} <br>
               <b>Unique Identifier:</b> {1}<br>
               <b>MAC Address:</b> {2}<br>
