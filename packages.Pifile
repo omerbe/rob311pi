@@ -4,8 +4,13 @@ RUN apt-get install -y git
 RUN apt install -y libnss-resolve
 
 RUN apt-get install ufw -y
+
+# Dephy Actpack and Flexsea
+RUN bash -c "git clone https://github.com/imsenthur/Actuator-Package.git /home/${user}/Actuator-Package"
+RUN apt-get install python3-scipy libatlas-base-dev -y # ufw is already listed
+RUN apt-get install libc6 libgcc-s1 -y
+RUN bash -c "python3 -m pip install flexsea"
 RUN bash -c "python3 -m pip install numpy --upgrade"
-RUN bash -c "python3 -m pip install scipy"
 
 # Gh
 RUN bash -c "curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg"
@@ -29,6 +34,5 @@ RUN bash -c "python3 -m pip install pyPS4Controller"
 RUN bash -c "python3 -m pip install simple-pid"
 RUN bash -c "python3 -m pip install adafruit-circuitpython-dotstar"
 
-# ROB311 C Tools
+# ROB311
 RUN bash -c "git clone https://github.com/neurobionics/rob311.git /home/${user}/rob311"
-RUN bash -c "chown -R $USER /home/${user}/rob311"
