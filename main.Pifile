@@ -4,8 +4,6 @@ PUMP 1024M
 
 RUN touch /boot/ssh
 
-source .env
-
 hostname="${HOSTNAME:-neurobionics}"
 user="${USER:-pi}"
 password="${USERPASSWORD:-neurobionics}"
