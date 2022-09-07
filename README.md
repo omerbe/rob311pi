@@ -12,7 +12,7 @@ While this image was originally configured for usage at the University of Michig
 
 This image has only been tested on the Raspberry Pi v4.  It will not work on the Raspberry Pi Zero.
 
-<img src="https://github.com/neurobionics/neurobionicspi/blob/main/assets/neurobionicspi.PNG" width="1024">
+<img src="https://github.com/neurobionics/rob311pi/blob/main/assets/neurobionicspi.png" width="1024">
 
 # Features
 * Uses [CI](https://docs.github.com/en/actions/automating-builds-and-tests/about-continuous-integration) (Github Actions) to build a stable Raspbian image that is always up to date.
