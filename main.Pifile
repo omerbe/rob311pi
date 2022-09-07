@@ -1,6 +1,6 @@
 FROM https://downloads.raspberrypi.org/raspios_lite_armhf/images/raspios_lite_armhf-2021-11-08/2021-10-30-raspios-bullseye-armhf-lite.zip
 
-PUMP 800M
+PUMP 1024M
 
 RUN touch /boot/ssh
 
@@ -76,7 +76,7 @@ RUN apt install -y webmin
 # Configuring message of the day (motd)
 
 RUN bash -c "sudo rm -rf /etc/motd"
-RUN bash -c "curl -L https://raw.githubusercontent.com/imsenthur/neuropi-motd/main/motd -o /home/${user}/.bash_profile"
+RUN bash -c "curl -L https://raw.githubusercontent.com/neurobionics/rob311pi/main/motd -o /home/${user}/.bash_profile"
 
 ##################################
 
